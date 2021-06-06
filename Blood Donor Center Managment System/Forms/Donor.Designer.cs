@@ -54,7 +54,7 @@ namespace Blood_Donor_Center_Managment_System.Forms
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.DGenderCB = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.DSaveButton = new Guna.UI2.WinForms.Guna2Button();
+  
             this.Blood_drop = new System.Windows.Forms.PictureBox();
             this.label17 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
