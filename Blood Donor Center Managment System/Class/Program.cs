@@ -17,7 +17,7 @@ namespace Blood_Donor_Center_Managment_System
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Donor());
+            Application.Run(new ViewDonors());
         }
     }
 }
