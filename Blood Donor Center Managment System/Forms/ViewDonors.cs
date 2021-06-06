@@ -19,10 +19,7 @@ namespace Blood_Donor_Center_Managment_System.Forms
             DonorsPopulation();
         }
 
-        private void label17_Click(object sender, EventArgs e)
-        {
-
-        }
+       
         SqlConnection Connect = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\jakub\Documents\BloodBankDB.mdf;Integrated Security=True;Connect Timeout=30");
 
         private void DonorsPopulation()
@@ -39,7 +36,7 @@ namespace Blood_Donor_Center_Managment_System.Forms
 
         }
 
-        private void VDDataGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void ViewDonors_Load(object sender, EventArgs e)
         {
 
         }

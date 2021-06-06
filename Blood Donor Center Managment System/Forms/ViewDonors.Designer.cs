@@ -46,8 +46,8 @@ namespace Blood_Donor_Center_Managment_System.Forms
             this.label2 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.VDDataGrid = new Guna.UI2.WinForms.Guna2DataGridView();
             this.label17 = new System.Windows.Forms.Label();
+            this.VDDataGrid = new Guna.UI2.WinForms.Guna2DataGridView();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.VDDataGrid)).BeginInit();
@@ -231,64 +231,6 @@ namespace Blood_Donor_Center_Managment_System.Forms
             this.guna2TextBox1.Size = new System.Drawing.Size(306, 36);
             this.guna2TextBox1.TabIndex = 22;
             // 
-            // VDDataGrid
-            // 
-            this.VDDataGrid.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.VDDataGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.VDDataGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.VDDataGrid.BackgroundColor = System.Drawing.Color.White;
-            this.VDDataGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.VDDataGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.VDDataGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.VDDataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.VDDataGrid.ColumnHeadersHeight = 4;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.VDDataGrid.DefaultCellStyle = dataGridViewCellStyle3;
-            this.VDDataGrid.EnableHeadersVisualStyles = false;
-            this.VDDataGrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.VDDataGrid.Location = new System.Drawing.Point(403, 232);
-            this.VDDataGrid.Name = "VDDataGrid";
-            this.VDDataGrid.RowHeadersVisible = false;
-            this.VDDataGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.VDDataGrid.Size = new System.Drawing.Size(959, 538);
-            this.VDDataGrid.TabIndex = 23;
-            this.VDDataGrid.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.VDDataGrid.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.VDDataGrid.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.VDDataGrid.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.VDDataGrid.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.VDDataGrid.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.VDDataGrid.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.VDDataGrid.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.VDDataGrid.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.VDDataGrid.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.VDDataGrid.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.VDDataGrid.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.VDDataGrid.ThemeStyle.HeaderStyle.Height = 4;
-            this.VDDataGrid.ThemeStyle.ReadOnly = false;
-            this.VDDataGrid.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.VDDataGrid.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.VDDataGrid.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.VDDataGrid.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.VDDataGrid.ThemeStyle.RowsStyle.Height = 22;
-            this.VDDataGrid.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.VDDataGrid.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.VDDataGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.VDDataGrid_CellContentClick);
-            // 
             // label17
             // 
             this.label17.AutoSize = true;
@@ -300,7 +242,63 @@ namespace Blood_Donor_Center_Managment_System.Forms
             this.label17.Size = new System.Drawing.Size(246, 55);
             this.label17.TabIndex = 45;
             this.label17.Text = "Donors list";
-            this.label17.Click += new System.EventHandler(this.label17_Click);
+            // 
+            // VDDataGrid
+            // 
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Pink;
+            this.VDDataGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.VDDataGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.VDDataGrid.BackgroundColor = System.Drawing.Color.White;
+            this.VDDataGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.VDDataGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.VDDataGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DarkRed;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.VDDataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.VDDataGrid.ColumnHeadersHeight = 25;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(217)))), ((int)(((byte)(215)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(129)))), ((int)(((byte)(121)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.VDDataGrid.DefaultCellStyle = dataGridViewCellStyle3;
+            this.VDDataGrid.EnableHeadersVisualStyles = false;
+            this.VDDataGrid.GridColor = System.Drawing.Color.LavenderBlush;
+            this.VDDataGrid.Location = new System.Drawing.Point(296, 223);
+            this.VDDataGrid.Name = "VDDataGrid";
+            this.VDDataGrid.RowHeadersVisible = false;
+            this.VDDataGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.VDDataGrid.Size = new System.Drawing.Size(1157, 618);
+            this.VDDataGrid.TabIndex = 46;
+            this.VDDataGrid.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Red;
+            this.VDDataGrid.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.Pink;
+            this.VDDataGrid.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.VDDataGrid.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.VDDataGrid.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.VDDataGrid.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.VDDataGrid.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.VDDataGrid.ThemeStyle.GridColor = System.Drawing.Color.LavenderBlush;
+            this.VDDataGrid.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.DarkRed;
+            this.VDDataGrid.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.VDDataGrid.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.VDDataGrid.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.VDDataGrid.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.VDDataGrid.ThemeStyle.HeaderStyle.Height = 25;
+            this.VDDataGrid.ThemeStyle.ReadOnly = false;
+            this.VDDataGrid.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(217)))), ((int)(((byte)(215)))));
+            this.VDDataGrid.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.VDDataGrid.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.VDDataGrid.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.VDDataGrid.ThemeStyle.RowsStyle.Height = 22;
+            this.VDDataGrid.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(129)))), ((int)(((byte)(121)))));
+            this.VDDataGrid.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
             // 
             // ViewDonors
             // 
@@ -308,8 +306,8 @@ namespace Blood_Donor_Center_Managment_System.Forms
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1485, 841);
-            this.Controls.Add(this.label17);
             this.Controls.Add(this.VDDataGrid);
+            this.Controls.Add(this.label17);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.guna2TextBox1);
             this.Controls.Add(this.panel2);
@@ -318,6 +316,7 @@ namespace Blood_Donor_Center_Managment_System.Forms
             this.Name = "ViewDonors";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ViewDonors";
+            this.Load += new System.EventHandler(this.ViewDonors_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -344,7 +343,7 @@ namespace Blood_Donor_Center_Managment_System.Forms
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label11;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
-        private Guna.UI2.WinForms.Guna2DataGridView VDDataGrid;
         private System.Windows.Forms.Label label17;
+        private Guna.UI2.WinForms.Guna2DataGridView VDDataGrid;
     }
 }
