@@ -54,9 +54,9 @@ namespace Blood_Donor_Center_Managment_System.Forms
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.DGenderCB = new Guna.UI2.WinForms.Guna2ComboBox();
-  
             this.Blood_drop = new System.Windows.Forms.PictureBox();
             this.label17 = new System.Windows.Forms.Label();
+            this.DSave = new Guna.UI2.WinForms.Guna2Button();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Blood_drop)).BeginInit();
@@ -338,9 +338,8 @@ namespace Blood_Donor_Center_Managment_System.Forms
             // 
             // DAddressTB
             // 
-            this.DAddressTB.AutoRoundedCorners = true;
             this.DAddressTB.BorderColor = System.Drawing.Color.DarkRed;
-            this.DAddressTB.BorderRadius = 74;
+            this.DAddressTB.BorderRadius = 10;
             this.DAddressTB.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
             this.DAddressTB.BorderThickness = 3;
             this.DAddressTB.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -353,7 +352,7 @@ namespace Blood_Donor_Center_Managment_System.Forms
             this.DAddressTB.FillColor = System.Drawing.Color.WhiteSmoke;
             this.DAddressTB.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.DAddressTB.FocusedState.Parent = this.DAddressTB;
-            this.DAddressTB.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.DAddressTB.Font = new System.Drawing.Font("Times New Roman", 15.75F);
             this.DAddressTB.ForeColor = System.Drawing.Color.DarkRed;
             this.DAddressTB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.DAddressTB.HoverState.Parent = this.DAddressTB;
@@ -449,31 +448,6 @@ namespace Blood_Donor_Center_Managment_System.Forms
             this.DGenderCB.Size = new System.Drawing.Size(306, 36);
             this.DGenderCB.TabIndex = 27;
             // 
-            // DSaveButton
-            // 
-            this.DSaveButton.AutoRoundedCorners = true;
-            this.DSaveButton.BackColor = System.Drawing.Color.Transparent;
-            this.DSaveButton.BorderColor = System.Drawing.Color.White;
-            this.DSaveButton.BorderRadius = 17;
-            this.DSaveButton.CheckedState.Parent = this.DSaveButton;
-            this.DSaveButton.CustomImages.Parent = this.DSaveButton;
-            this.DSaveButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.DSaveButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.DSaveButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.DSaveButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.DSaveButton.DisabledState.Parent = this.DSaveButton;
-            this.DSaveButton.FillColor = System.Drawing.Color.DarkRed;
-            this.DSaveButton.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.DSaveButton.ForeColor = System.Drawing.Color.White;
-            this.DSaveButton.HoverState.Parent = this.DSaveButton;
-            this.DSaveButton.Location = new System.Drawing.Point(763, 716);
-            this.DSaveButton.Name = "DSaveButton";
-            this.DSaveButton.ShadowDecoration.Parent = this.DSaveButton;
-            this.DSaveButton.Size = new System.Drawing.Size(306, 36);
-            this.DSaveButton.TabIndex = 29;
-            this.DSaveButton.Text = "Save";
-            this.DSaveButton.Click += new System.EventHandler(this.guna2Button1_Click);
-            // 
             // Blood_drop
             // 
             this.Blood_drop.Image = ((System.Drawing.Image)(resources.GetObject("Blood_drop.Image")));
@@ -497,15 +471,40 @@ namespace Blood_Donor_Center_Managment_System.Forms
             this.label17.TabIndex = 44;
             this.label17.Text = "Donor";
             // 
+            // DSave
+            // 
+            this.DSave.AutoRoundedCorners = true;
+            this.DSave.BackColor = System.Drawing.Color.Transparent;
+            this.DSave.BorderColor = System.Drawing.Color.White;
+            this.DSave.BorderRadius = 17;
+            this.DSave.CheckedState.Parent = this.DSave;
+            this.DSave.CustomImages.Parent = this.DSave;
+            this.DSave.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.DSave.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.DSave.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.DSave.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.DSave.DisabledState.Parent = this.DSave;
+            this.DSave.FillColor = System.Drawing.Color.DarkRed;
+            this.DSave.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.DSave.ForeColor = System.Drawing.Color.White;
+            this.DSave.HoverState.Parent = this.DSave;
+            this.DSave.Location = new System.Drawing.Point(763, 731);
+            this.DSave.Name = "DSave";
+            this.DSave.ShadowDecoration.Parent = this.DSave;
+            this.DSave.Size = new System.Drawing.Size(306, 36);
+            this.DSave.TabIndex = 58;
+            this.DSave.Text = "Save";
+            this.DSave.Click += new System.EventHandler(this.DSave_Click);
+            // 
             // Donor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1485, 841);
+            this.Controls.Add(this.DSave);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.Blood_drop);
-            this.Controls.Add(this.DSaveButton);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.DGenderCB);
             this.Controls.Add(this.label15);
@@ -562,5 +561,6 @@ namespace Blood_Donor_Center_Managment_System.Forms
         private Guna.UI2.WinForms.Guna2Button DSaveButton;
         private System.Windows.Forms.PictureBox Blood_drop;
         private System.Windows.Forms.Label label17;
+        private Guna.UI2.WinForms.Guna2Button DSave;
     }
 }
