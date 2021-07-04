@@ -35,34 +35,35 @@ namespace Blood_Donor_Center_Managment_System.Forms
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.DashMenu = new System.Windows.Forms.Label();
+            this.BTMenu = new System.Windows.Forms.Label();
+            this.BSMenu = new System.Windows.Forms.Label();
+            this.VPMenu = new System.Windows.Forms.Label();
+            this.PMenu = new System.Windows.Forms.Label();
+            this.VDMenu = new System.Windows.Forms.Label();
+            this.DMenu = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.guna2ComboBox2 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.PGenderCB = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.PBloodTypeCB = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.guna2TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.PAddressTb = new Guna.UI2.WinForms.Guna2TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.PPhoneNumberTb = new Guna.UI2.WinForms.Guna2TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.PAgeTb = new Guna.UI2.WinForms.Guna2TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.PNameTb = new Guna.UI2.WinForms.Guna2TextBox();
+            this.VPEdit = new Guna.UI2.WinForms.Guna2Button();
+            this.VPDelete = new Guna.UI2.WinForms.Guna2Button();
             this.label10 = new System.Windows.Forms.Label();
+            this.VPDataGrid = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.VPDataGrid)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -89,20 +90,105 @@ namespace Blood_Donor_Center_Managment_System.Forms
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DarkRed;
-            this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.panel6);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.DashMenu);
+            this.panel1.Controls.Add(this.BTMenu);
+            this.panel1.Controls.Add(this.BSMenu);
+            this.panel1.Controls.Add(this.VPMenu);
+            this.panel1.Controls.Add(this.PMenu);
+            this.panel1.Controls.Add(this.VDMenu);
+            this.panel1.Controls.Add(this.DMenu);
+            this.panel1.Controls.Add(this.label9);
+            this.panel1.Controls.Add(this.panel6);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(261, 841);
             this.panel1.TabIndex = 6;
+            // 
+            // DashMenu
+            // 
+            this.DashMenu.AutoSize = true;
+            this.DashMenu.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.DashMenu.ForeColor = System.Drawing.Color.White;
+            this.DashMenu.Location = new System.Drawing.Point(28, 599);
+            this.DashMenu.Name = "DashMenu";
+            this.DashMenu.Size = new System.Drawing.Size(176, 42);
+            this.DashMenu.TabIndex = 23;
+            this.DashMenu.Text = "Dashboard";
+            this.DashMenu.Click += new System.EventHandler(this.DashMenu_Click);
+            // 
+            // BTMenu
+            // 
+            this.BTMenu.AutoSize = true;
+            this.BTMenu.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.BTMenu.ForeColor = System.Drawing.Color.White;
+            this.BTMenu.Location = new System.Drawing.Point(28, 523);
+            this.BTMenu.Name = "BTMenu";
+            this.BTMenu.Size = new System.Drawing.Size(237, 42);
+            this.BTMenu.TabIndex = 22;
+            this.BTMenu.Text = "Blood Transfer";
+            this.BTMenu.Click += new System.EventHandler(this.BTMenu_Click);
+            // 
+            // BSMenu
+            // 
+            this.BSMenu.AutoSize = true;
+            this.BSMenu.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.BSMenu.ForeColor = System.Drawing.Color.White;
+            this.BSMenu.Location = new System.Drawing.Point(28, 443);
+            this.BSMenu.Name = "BSMenu";
+            this.BSMenu.Size = new System.Drawing.Size(197, 42);
+            this.BSMenu.TabIndex = 21;
+            this.BSMenu.Text = "Blood Stock";
+            this.BSMenu.Click += new System.EventHandler(this.BSMenu_Click);
+            // 
+            // VPMenu
+            // 
+            this.VPMenu.AutoSize = true;
+            this.VPMenu.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.VPMenu.ForeColor = System.Drawing.Color.White;
+            this.VPMenu.Location = new System.Drawing.Point(28, 368);
+            this.VPMenu.Name = "VPMenu";
+            this.VPMenu.Size = new System.Drawing.Size(219, 42);
+            this.VPMenu.TabIndex = 20;
+            this.VPMenu.Text = "View Patients";
+            this.VPMenu.Click += new System.EventHandler(this.VPMenu_Click);
+            // 
+            // PMenu
+            // 
+            this.PMenu.AutoSize = true;
+            this.PMenu.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.PMenu.ForeColor = System.Drawing.Color.White;
+            this.PMenu.Location = new System.Drawing.Point(28, 294);
+            this.PMenu.Name = "PMenu";
+            this.PMenu.Size = new System.Drawing.Size(119, 42);
+            this.PMenu.TabIndex = 19;
+            this.PMenu.Text = "Patient";
+            this.PMenu.Click += new System.EventHandler(this.PMenu_Click);
+            // 
+            // VDMenu
+            // 
+            this.VDMenu.AutoSize = true;
+            this.VDMenu.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.VDMenu.ForeColor = System.Drawing.Color.White;
+            this.VDMenu.Location = new System.Drawing.Point(28, 223);
+            this.VDMenu.Name = "VDMenu";
+            this.VDMenu.Size = new System.Drawing.Size(212, 42);
+            this.VDMenu.TabIndex = 18;
+            this.VDMenu.Text = "View Donors";
+            this.VDMenu.Click += new System.EventHandler(this.VDMenu_Click);
+            // 
+            // DMenu
+            // 
+            this.DMenu.AutoSize = true;
+            this.DMenu.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.DMenu.ForeColor = System.Drawing.Color.White;
+            this.DMenu.Location = new System.Drawing.Point(28, 149);
+            this.DMenu.Name = "DMenu";
+            this.DMenu.Size = new System.Drawing.Size(112, 42);
+            this.DMenu.TabIndex = 17;
+            this.DMenu.Text = "Donor";
+            this.DMenu.Click += new System.EventHandler(this.DMenu_Click);
             // 
             // label9
             // 
@@ -115,39 +201,6 @@ namespace Blood_Donor_Center_Managment_System.Forms
             this.label9.TabIndex = 16;
             this.label9.Text = "Logout";
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(28, 599);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(176, 42);
-            this.label8.TabIndex = 15;
-            this.label8.Text = "Dashboard";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(28, 523);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(237, 42);
-            this.label7.TabIndex = 13;
-            this.label7.Text = "Blood Transfer";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(28, 443);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(197, 42);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "Blood Stock";
-            // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -157,114 +210,70 @@ namespace Blood_Donor_Center_Managment_System.Forms
             this.panel6.Size = new System.Drawing.Size(10, 62);
             this.panel6.TabIndex = 8;
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(28, 368);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(219, 42);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "View Patients";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(28, 294);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(119, 42);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Patient";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(28, 223);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(212, 42);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "View Donors";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(28, 149);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(112, 42);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Donor";
-            // 
             // label16
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label16.ForeColor = System.Drawing.Color.Crimson;
-            this.label16.Location = new System.Drawing.Point(992, 223);
+            this.label16.Location = new System.Drawing.Point(993, 225);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(125, 42);
             this.label16.TabIndex = 41;
             this.label16.Text = "Gender";
             // 
-            // guna2ComboBox2
+            // PGenderCB
             // 
-            this.guna2ComboBox2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox2.BorderColor = System.Drawing.Color.DarkRed;
-            this.guna2ComboBox2.BorderRadius = 10;
-            this.guna2ComboBox2.BorderThickness = 3;
-            this.guna2ComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox2.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox2.FocusedState.Parent = this.guna2ComboBox2;
-            this.guna2ComboBox2.Font = new System.Drawing.Font("Times New Roman", 15.75F);
-            this.guna2ComboBox2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2ComboBox2.HoverState.Parent = this.guna2ComboBox2;
-            this.guna2ComboBox2.ItemHeight = 30;
-            this.guna2ComboBox2.Items.AddRange(new object[] {
+            this.PGenderCB.BackColor = System.Drawing.Color.Transparent;
+            this.PGenderCB.BorderColor = System.Drawing.Color.DarkRed;
+            this.PGenderCB.BorderRadius = 10;
+            this.PGenderCB.BorderThickness = 3;
+            this.PGenderCB.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.PGenderCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.PGenderCB.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PGenderCB.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PGenderCB.FocusedState.Parent = this.PGenderCB;
+            this.PGenderCB.Font = new System.Drawing.Font("Times New Roman", 15.75F);
+            this.PGenderCB.ForeColor = System.Drawing.Color.DarkRed;
+            this.PGenderCB.HoverState.Parent = this.PGenderCB;
+            this.PGenderCB.ItemHeight = 30;
+            this.PGenderCB.Items.AddRange(new object[] {
             "Male",
             "Female",
             "Unknown"});
-            this.guna2ComboBox2.ItemsAppearance.Parent = this.guna2ComboBox2;
-            this.guna2ComboBox2.Location = new System.Drawing.Point(885, 268);
-            this.guna2ComboBox2.Name = "guna2ComboBox2";
-            this.guna2ComboBox2.ShadowDecoration.Parent = this.guna2ComboBox2;
-            this.guna2ComboBox2.Size = new System.Drawing.Size(306, 36);
-            this.guna2ComboBox2.TabIndex = 40;
+            this.PGenderCB.ItemsAppearance.Parent = this.PGenderCB;
+            this.PGenderCB.Location = new System.Drawing.Point(885, 270);
+            this.PGenderCB.Name = "PGenderCB";
+            this.PGenderCB.ShadowDecoration.Parent = this.PGenderCB;
+            this.PGenderCB.Size = new System.Drawing.Size(306, 36);
+            this.PGenderCB.TabIndex = 40;
             // 
             // label15
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label15.ForeColor = System.Drawing.Color.Crimson;
-            this.label15.Location = new System.Drawing.Point(1254, 223);
+            this.label15.Location = new System.Drawing.Point(1253, 225);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(176, 42);
             this.label15.TabIndex = 39;
             this.label15.Text = "Blood type";
             // 
-            // guna2ComboBox1
+            // PBloodTypeCB
             // 
-            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox1.BorderColor = System.Drawing.Color.DarkRed;
-            this.guna2ComboBox1.BorderRadius = 10;
-            this.guna2ComboBox1.BorderThickness = 3;
-            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.FocusedState.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Font = new System.Drawing.Font("Times New Roman", 15.75F);
-            this.guna2ComboBox1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2ComboBox1.HoverState.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.ItemHeight = 30;
-            this.guna2ComboBox1.Items.AddRange(new object[] {
+            this.PBloodTypeCB.BackColor = System.Drawing.Color.Transparent;
+            this.PBloodTypeCB.BorderColor = System.Drawing.Color.DarkRed;
+            this.PBloodTypeCB.BorderRadius = 10;
+            this.PBloodTypeCB.BorderThickness = 3;
+            this.PBloodTypeCB.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.PBloodTypeCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.PBloodTypeCB.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PBloodTypeCB.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PBloodTypeCB.FocusedState.Parent = this.PBloodTypeCB;
+            this.PBloodTypeCB.Font = new System.Drawing.Font("Times New Roman", 15.75F);
+            this.PBloodTypeCB.ForeColor = System.Drawing.Color.DarkRed;
+            this.PBloodTypeCB.HoverState.Parent = this.PBloodTypeCB;
+            this.PBloodTypeCB.ItemHeight = 30;
+            this.PBloodTypeCB.Items.AddRange(new object[] {
             "A+",
             "B+",
             "0+",
@@ -273,280 +282,230 @@ namespace Blood_Donor_Center_Managment_System.Forms
             "B-",
             "AB-",
             "0-"});
-            this.guna2ComboBox1.ItemsAppearance.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Location = new System.Drawing.Point(1197, 268);
-            this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.ShadowDecoration.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Size = new System.Drawing.Size(282, 36);
-            this.guna2ComboBox1.TabIndex = 31;
+            this.PBloodTypeCB.ItemsAppearance.Parent = this.PBloodTypeCB;
+            this.PBloodTypeCB.Location = new System.Drawing.Point(1197, 270);
+            this.PBloodTypeCB.Name = "PBloodTypeCB";
+            this.PBloodTypeCB.ShadowDecoration.Parent = this.PBloodTypeCB;
+            this.PBloodTypeCB.Size = new System.Drawing.Size(282, 36);
+            this.PBloodTypeCB.TabIndex = 31;
             // 
             // label14
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label14.ForeColor = System.Drawing.Color.Crimson;
-            this.label14.Location = new System.Drawing.Point(1267, 318);
+            this.label14.Location = new System.Drawing.Point(1267, 312);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(117, 42);
+            this.label14.Size = new System.Drawing.Size(135, 42);
             this.label14.TabIndex = 38;
-            this.label14.Text = "Adress";
+            this.label14.Text = "Address";
             // 
-            // guna2TextBox4
+            // PAddressTb
             // 
-            this.guna2TextBox4.BorderColor = System.Drawing.Color.DarkRed;
-            this.guna2TextBox4.BorderRadius = 10;
-            this.guna2TextBox4.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
-            this.guna2TextBox4.BorderThickness = 3;
-            this.guna2TextBox4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox4.DefaultText = "";
-            this.guna2TextBox4.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox4.DisabledState.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox4.FillColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2TextBox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.FocusedState.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.Font = new System.Drawing.Font("Times New Roman", 15.75F);
-            this.guna2TextBox4.ForeColor = System.Drawing.Color.DarkRed;
-            this.guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.HoverState.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.Location = new System.Drawing.Point(1200, 359);
-            this.guna2TextBox4.Name = "guna2TextBox4";
-            this.guna2TextBox4.PasswordChar = '\0';
-            this.guna2TextBox4.PlaceholderForeColor = System.Drawing.Color.Red;
-            this.guna2TextBox4.PlaceholderText = "";
-            this.guna2TextBox4.SelectedText = "";
-            this.guna2TextBox4.ShadowDecoration.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.Size = new System.Drawing.Size(282, 36);
-            this.guna2TextBox4.TabIndex = 37;
+            this.PAddressTb.BorderColor = System.Drawing.Color.DarkRed;
+            this.PAddressTb.BorderRadius = 10;
+            this.PAddressTb.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            this.PAddressTb.BorderThickness = 3;
+            this.PAddressTb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.PAddressTb.DefaultText = "";
+            this.PAddressTb.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.PAddressTb.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.PAddressTb.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.PAddressTb.DisabledState.Parent = this.PAddressTb;
+            this.PAddressTb.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.PAddressTb.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.PAddressTb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PAddressTb.FocusedState.Parent = this.PAddressTb;
+            this.PAddressTb.Font = new System.Drawing.Font("Times New Roman", 15.75F);
+            this.PAddressTb.ForeColor = System.Drawing.Color.DarkRed;
+            this.PAddressTb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PAddressTb.HoverState.Parent = this.PAddressTb;
+            this.PAddressTb.Location = new System.Drawing.Point(1200, 359);
+            this.PAddressTb.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.PAddressTb.Name = "PAddressTb";
+            this.PAddressTb.PasswordChar = '\0';
+            this.PAddressTb.PlaceholderForeColor = System.Drawing.Color.Red;
+            this.PAddressTb.PlaceholderText = "";
+            this.PAddressTb.SelectedText = "";
+            this.PAddressTb.ShadowDecoration.Parent = this.PAddressTb;
+            this.PAddressTb.Size = new System.Drawing.Size(282, 36);
+            this.PAddressTb.TabIndex = 37;
             // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label13.ForeColor = System.Drawing.Color.Crimson;
-            this.label13.Location = new System.Drawing.Point(306, 318);
+            this.label13.Location = new System.Drawing.Point(307, 312);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(233, 42);
             this.label13.TabIndex = 36;
             this.label13.Text = "Phone number";
             // 
-            // guna2TextBox3
+            // PPhoneNumberTb
             // 
-            this.guna2TextBox3.BorderColor = System.Drawing.Color.DarkRed;
-            this.guna2TextBox3.BorderRadius = 10;
-            this.guna2TextBox3.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
-            this.guna2TextBox3.BorderThickness = 3;
-            this.guna2TextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox3.DefaultText = "";
-            this.guna2TextBox3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.DisabledState.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.FillColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.FocusedState.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.Font = new System.Drawing.Font("Times New Roman", 15.75F);
-            this.guna2TextBox3.ForeColor = System.Drawing.Color.DarkRed;
-            this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.HoverState.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.Location = new System.Drawing.Point(267, 359);
-            this.guna2TextBox3.Name = "guna2TextBox3";
-            this.guna2TextBox3.PasswordChar = '\0';
-            this.guna2TextBox3.PlaceholderForeColor = System.Drawing.Color.Red;
-            this.guna2TextBox3.PlaceholderText = "";
-            this.guna2TextBox3.SelectedText = "";
-            this.guna2TextBox3.ShadowDecoration.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.Size = new System.Drawing.Size(306, 36);
-            this.guna2TextBox3.TabIndex = 32;
+            this.PPhoneNumberTb.BorderColor = System.Drawing.Color.DarkRed;
+            this.PPhoneNumberTb.BorderRadius = 10;
+            this.PPhoneNumberTb.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            this.PPhoneNumberTb.BorderThickness = 3;
+            this.PPhoneNumberTb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.PPhoneNumberTb.DefaultText = "";
+            this.PPhoneNumberTb.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.PPhoneNumberTb.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.PPhoneNumberTb.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.PPhoneNumberTb.DisabledState.Parent = this.PPhoneNumberTb;
+            this.PPhoneNumberTb.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.PPhoneNumberTb.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.PPhoneNumberTb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PPhoneNumberTb.FocusedState.Parent = this.PPhoneNumberTb;
+            this.PPhoneNumberTb.Font = new System.Drawing.Font("Times New Roman", 15.75F);
+            this.PPhoneNumberTb.ForeColor = System.Drawing.Color.DarkRed;
+            this.PPhoneNumberTb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PPhoneNumberTb.HoverState.Parent = this.PPhoneNumberTb;
+            this.PPhoneNumberTb.Location = new System.Drawing.Point(267, 359);
+            this.PPhoneNumberTb.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.PPhoneNumberTb.Name = "PPhoneNumberTb";
+            this.PPhoneNumberTb.PasswordChar = '\0';
+            this.PPhoneNumberTb.PlaceholderForeColor = System.Drawing.Color.Red;
+            this.PPhoneNumberTb.PlaceholderText = "";
+            this.PPhoneNumberTb.SelectedText = "";
+            this.PPhoneNumberTb.ShadowDecoration.Parent = this.PPhoneNumberTb;
+            this.PPhoneNumberTb.Size = new System.Drawing.Size(306, 36);
+            this.PPhoneNumberTb.TabIndex = 32;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label12.ForeColor = System.Drawing.Color.Crimson;
-            this.label12.Location = new System.Drawing.Point(684, 223);
+            this.label12.Location = new System.Drawing.Point(691, 223);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(77, 42);
             this.label12.TabIndex = 35;
             this.label12.Text = "Age";
             // 
-            // guna2TextBox2
+            // PAgeTb
             // 
-            this.guna2TextBox2.BorderColor = System.Drawing.Color.DarkRed;
-            this.guna2TextBox2.BorderRadius = 10;
-            this.guna2TextBox2.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
-            this.guna2TextBox2.BorderThickness = 3;
-            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox2.DefaultText = "";
-            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.DisabledState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.FillColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.FocusedState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Font = new System.Drawing.Font("Times New Roman", 15.75F);
-            this.guna2TextBox2.ForeColor = System.Drawing.Color.DarkRed;
-            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.HoverState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Location = new System.Drawing.Point(573, 270);
-            this.guna2TextBox2.Name = "guna2TextBox2";
-            this.guna2TextBox2.PasswordChar = '\0';
-            this.guna2TextBox2.PlaceholderForeColor = System.Drawing.Color.Red;
-            this.guna2TextBox2.PlaceholderText = "";
-            this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.ShadowDecoration.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Size = new System.Drawing.Size(306, 36);
-            this.guna2TextBox2.TabIndex = 33;
+            this.PAgeTb.BorderColor = System.Drawing.Color.DarkRed;
+            this.PAgeTb.BorderRadius = 10;
+            this.PAgeTb.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            this.PAgeTb.BorderThickness = 3;
+            this.PAgeTb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.PAgeTb.DefaultText = "";
+            this.PAgeTb.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.PAgeTb.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.PAgeTb.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.PAgeTb.DisabledState.Parent = this.PAgeTb;
+            this.PAgeTb.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.PAgeTb.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.PAgeTb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PAgeTb.FocusedState.Parent = this.PAgeTb;
+            this.PAgeTb.Font = new System.Drawing.Font("Times New Roman", 15.75F);
+            this.PAgeTb.ForeColor = System.Drawing.Color.DarkRed;
+            this.PAgeTb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PAgeTb.HoverState.Parent = this.PAgeTb;
+            this.PAgeTb.Location = new System.Drawing.Point(573, 270);
+            this.PAgeTb.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.PAgeTb.Name = "PAgeTb";
+            this.PAgeTb.PasswordChar = '\0';
+            this.PAgeTb.PlaceholderForeColor = System.Drawing.Color.Red;
+            this.PAgeTb.PlaceholderText = "";
+            this.PAgeTb.SelectedText = "";
+            this.PAgeTb.ShadowDecoration.Parent = this.PAgeTb;
+            this.PAgeTb.Size = new System.Drawing.Size(306, 36);
+            this.PAgeTb.TabIndex = 33;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label11.ForeColor = System.Drawing.Color.Crimson;
-            this.label11.Location = new System.Drawing.Point(334, 223);
+            this.label11.Location = new System.Drawing.Point(363, 223);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(106, 42);
             this.label11.TabIndex = 30;
             this.label11.Text = "Name";
             // 
-            // guna2TextBox1
+            // PNameTb
             // 
-            this.guna2TextBox1.BorderColor = System.Drawing.Color.DarkRed;
-            this.guna2TextBox1.BorderRadius = 10;
-            this.guna2TextBox1.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
-            this.guna2TextBox1.BorderThickness = 3;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FillColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Font = new System.Drawing.Font("Times New Roman", 15.75F);
-            this.guna2TextBox1.ForeColor = System.Drawing.Color.DarkRed;
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Location = new System.Drawing.Point(261, 270);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderForeColor = System.Drawing.Color.Red;
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Size = new System.Drawing.Size(306, 36);
-            this.guna2TextBox1.TabIndex = 34;
+            this.PNameTb.BorderColor = System.Drawing.Color.DarkRed;
+            this.PNameTb.BorderRadius = 10;
+            this.PNameTb.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            this.PNameTb.BorderThickness = 3;
+            this.PNameTb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.PNameTb.DefaultText = "";
+            this.PNameTb.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.PNameTb.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.PNameTb.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.PNameTb.DisabledState.Parent = this.PNameTb;
+            this.PNameTb.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.PNameTb.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.PNameTb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PNameTb.FocusedState.Parent = this.PNameTb;
+            this.PNameTb.Font = new System.Drawing.Font("Times New Roman", 15.75F);
+            this.PNameTb.ForeColor = System.Drawing.Color.DarkRed;
+            this.PNameTb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PNameTb.HoverState.Parent = this.PNameTb;
+            this.PNameTb.Location = new System.Drawing.Point(261, 270);
+            this.PNameTb.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.PNameTb.Name = "PNameTb";
+            this.PNameTb.PasswordChar = '\0';
+            this.PNameTb.PlaceholderForeColor = System.Drawing.Color.Red;
+            this.PNameTb.PlaceholderText = "";
+            this.PNameTb.SelectedText = "";
+            this.PNameTb.ShadowDecoration.Parent = this.PNameTb;
+            this.PNameTb.Size = new System.Drawing.Size(306, 36);
+            this.PNameTb.TabIndex = 34;
             // 
-            // guna2DataGridView1
+            // VPEdit
             // 
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
-            this.guna2DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.guna2DataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.guna2DataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.guna2DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
-            this.guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle12;
-            this.guna2DataGridView1.EnableHeadersVisualStyles = false;
-            this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.Location = new System.Drawing.Point(365, 401);
-            this.guna2DataGridView1.Name = "guna2DataGridView1";
-            this.guna2DataGridView1.RowHeadersVisible = false;
-            this.guna2DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(1065, 414);
-            this.guna2DataGridView1.TabIndex = 42;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 4;
-            this.guna2DataGridView1.ThemeStyle.ReadOnly = false;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.Height = 22;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.VPEdit.AutoRoundedCorners = true;
+            this.VPEdit.BackColor = System.Drawing.Color.Transparent;
+            this.VPEdit.BorderColor = System.Drawing.Color.White;
+            this.VPEdit.BorderRadius = 17;
+            this.VPEdit.CheckedState.Parent = this.VPEdit;
+            this.VPEdit.CustomImages.Parent = this.VPEdit;
+            this.VPEdit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.VPEdit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.VPEdit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.VPEdit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.VPEdit.DisabledState.Parent = this.VPEdit;
+            this.VPEdit.FillColor = System.Drawing.Color.DarkGreen;
+            this.VPEdit.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.VPEdit.ForeColor = System.Drawing.Color.White;
+            this.VPEdit.HoverState.Parent = this.VPEdit;
+            this.VPEdit.Location = new System.Drawing.Point(597, 359);
+            this.VPEdit.Name = "VPEdit";
+            this.VPEdit.ShadowDecoration.Parent = this.VPEdit;
+            this.VPEdit.Size = new System.Drawing.Size(254, 36);
+            this.VPEdit.TabIndex = 43;
+            this.VPEdit.Text = "Edit";
+            this.VPEdit.Click += new System.EventHandler(this.VPEdit_Click);
             // 
-            // guna2Button1
+            // VPDelete
             // 
-            this.guna2Button1.AutoRoundedCorners = true;
-            this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.BorderColor = System.Drawing.Color.White;
-            this.guna2Button1.BorderRadius = 17;
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.DisabledState.Parent = this.guna2Button1;
-            this.guna2Button1.FillColor = System.Drawing.Color.DarkGreen;
-            this.guna2Button1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(596, 359);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(254, 36);
-            this.guna2Button1.TabIndex = 43;
-            this.guna2Button1.Text = "Edit";
-            // 
-            // guna2Button2
-            // 
-            this.guna2Button2.AutoRoundedCorners = true;
-            this.guna2Button2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button2.BorderColor = System.Drawing.Color.White;
-            this.guna2Button2.BorderRadius = 17;
-            this.guna2Button2.CheckedState.Parent = this.guna2Button2;
-            this.guna2Button2.CustomImages.Parent = this.guna2Button2;
-            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button2.DisabledState.Parent = this.guna2Button2;
-            this.guna2Button2.FillColor = System.Drawing.Color.DarkRed;
-            this.guna2Button2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Location = new System.Drawing.Point(907, 359);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
-            this.guna2Button2.Size = new System.Drawing.Size(254, 36);
-            this.guna2Button2.TabIndex = 44;
-            this.guna2Button2.Text = "Delete";
+            this.VPDelete.AutoRoundedCorners = true;
+            this.VPDelete.BackColor = System.Drawing.Color.Transparent;
+            this.VPDelete.BorderColor = System.Drawing.Color.White;
+            this.VPDelete.BorderRadius = 17;
+            this.VPDelete.CheckedState.Parent = this.VPDelete;
+            this.VPDelete.CustomImages.Parent = this.VPDelete;
+            this.VPDelete.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.VPDelete.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.VPDelete.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.VPDelete.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.VPDelete.DisabledState.Parent = this.VPDelete;
+            this.VPDelete.FillColor = System.Drawing.Color.DarkRed;
+            this.VPDelete.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.VPDelete.ForeColor = System.Drawing.Color.White;
+            this.VPDelete.HoverState.Parent = this.VPDelete;
+            this.VPDelete.Location = new System.Drawing.Point(906, 359);
+            this.VPDelete.Name = "VPDelete";
+            this.VPDelete.ShadowDecoration.Parent = this.VPDelete;
+            this.VPDelete.Size = new System.Drawing.Size(254, 36);
+            this.VPDelete.TabIndex = 44;
+            this.VPDelete.Text = "Delete";
+            this.VPDelete.Click += new System.EventHandler(this.VPDelete_Click);
             // 
             // label10
             // 
@@ -556,9 +515,83 @@ namespace Blood_Donor_Center_Managment_System.Forms
             this.label10.ForeColor = System.Drawing.Color.Crimson;
             this.label10.Location = new System.Drawing.Point(753, 75);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(242, 55);
+            this.label10.Size = new System.Drawing.Size(261, 55);
             this.label10.TabIndex = 45;
-            this.label10.Text = "Patient list";
+            this.label10.Text = "Patients list";
+            // 
+            // VPDataGrid
+            // 
+            this.VPDataGrid.AllowUserToAddRows = false;
+            this.VPDataGrid.AllowUserToDeleteRows = false;
+            this.VPDataGrid.AllowUserToOrderColumns = true;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.Pink;
+            this.VPDataGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
+            this.VPDataGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.VPDataGrid.BackgroundColor = System.Drawing.Color.White;
+            this.VPDataGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.VPDataGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.VPDataGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.DarkRed;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.VPDataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            this.VPDataGrid.ColumnHeadersHeight = 25;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(217)))), ((int)(((byte)(215)))));
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(129)))), ((int)(((byte)(121)))));
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.VPDataGrid.DefaultCellStyle = dataGridViewCellStyle12;
+            this.VPDataGrid.EnableHeadersVisualStyles = false;
+            this.VPDataGrid.GridColor = System.Drawing.Color.LavenderBlush;
+            this.VPDataGrid.Location = new System.Drawing.Point(401, 418);
+            this.VPDataGrid.Name = "VPDataGrid";
+            this.VPDataGrid.ReadOnly = true;
+            this.VPDataGrid.RowHeadersVisible = false;
+            this.VPDataGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.VPDataGrid.Size = new System.Drawing.Size(983, 411);
+            this.VPDataGrid.TabIndex = 47;
+            this.VPDataGrid.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Red;
+            this.VPDataGrid.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.Pink;
+            this.VPDataGrid.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.VPDataGrid.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.VPDataGrid.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.VPDataGrid.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.VPDataGrid.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.VPDataGrid.ThemeStyle.GridColor = System.Drawing.Color.LavenderBlush;
+            this.VPDataGrid.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.DarkRed;
+            this.VPDataGrid.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.VPDataGrid.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.VPDataGrid.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.VPDataGrid.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.VPDataGrid.ThemeStyle.HeaderStyle.Height = 25;
+            this.VPDataGrid.ThemeStyle.ReadOnly = true;
+            this.VPDataGrid.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(217)))), ((int)(((byte)(215)))));
+            this.VPDataGrid.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.VPDataGrid.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.VPDataGrid.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.VPDataGrid.ThemeStyle.RowsStyle.Height = 22;
+            this.VPDataGrid.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(129)))), ((int)(((byte)(121)))));
+            this.VPDataGrid.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.VPDataGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.VPDataGrid_CellContentClick);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(28, 662);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(154, 42);
+            this.label2.TabIndex = 25;
+            this.label2.Text = "Donation";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // ViewPatient
             // 
@@ -566,22 +599,22 @@ namespace Blood_Donor_Center_Managment_System.Forms
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1485, 841);
+            this.Controls.Add(this.VPDataGrid);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.guna2Button2);
-            this.Controls.Add(this.guna2Button1);
-            this.Controls.Add(this.guna2DataGridView1);
+            this.Controls.Add(this.VPDelete);
+            this.Controls.Add(this.VPEdit);
             this.Controls.Add(this.label16);
-            this.Controls.Add(this.guna2ComboBox2);
+            this.Controls.Add(this.PGenderCB);
             this.Controls.Add(this.label15);
-            this.Controls.Add(this.guna2ComboBox1);
+            this.Controls.Add(this.PBloodTypeCB);
             this.Controls.Add(this.label14);
-            this.Controls.Add(this.guna2TextBox4);
+            this.Controls.Add(this.PAddressTb);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.guna2TextBox3);
+            this.Controls.Add(this.PPhoneNumberTb);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.guna2TextBox2);
+            this.Controls.Add(this.PAgeTb);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.guna2TextBox1);
+            this.Controls.Add(this.PNameTb);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -592,7 +625,7 @@ namespace Blood_Donor_Center_Managment_System.Forms
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.VPDataGrid)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -605,28 +638,29 @@ namespace Blood_Donor_Center_Managment_System.Forms
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label16;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox2;
+        private Guna.UI2.WinForms.Guna2ComboBox PGenderCB;
         private System.Windows.Forms.Label label15;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
+        private Guna.UI2.WinForms.Guna2ComboBox PBloodTypeCB;
         private System.Windows.Forms.Label label14;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox4;
+        private Guna.UI2.WinForms.Guna2TextBox PAddressTb;
         private System.Windows.Forms.Label label13;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
+        private Guna.UI2.WinForms.Guna2TextBox PPhoneNumberTb;
         private System.Windows.Forms.Label label12;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
+        private Guna.UI2.WinForms.Guna2TextBox PAgeTb;
         private System.Windows.Forms.Label label11;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
-        private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Guna.UI2.WinForms.Guna2TextBox PNameTb;
+        private Guna.UI2.WinForms.Guna2Button VPEdit;
+        private Guna.UI2.WinForms.Guna2Button VPDelete;
         private System.Windows.Forms.Label label10;
+        private Guna.UI2.WinForms.Guna2DataGridView VPDataGrid;
+        private System.Windows.Forms.Label DashMenu;
+        private System.Windows.Forms.Label BTMenu;
+        private System.Windows.Forms.Label BSMenu;
+        private System.Windows.Forms.Label VPMenu;
+        private System.Windows.Forms.Label PMenu;
+        private System.Windows.Forms.Label VDMenu;
+        private System.Windows.Forms.Label DMenu;
+        private System.Windows.Forms.Label label2;
     }
 }

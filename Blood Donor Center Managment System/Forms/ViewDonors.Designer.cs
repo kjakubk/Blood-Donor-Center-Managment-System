@@ -29,25 +29,26 @@ namespace Blood_Donor_Center_Managment_System.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.DashMenu = new System.Windows.Forms.Label();
+            this.BTMenu = new System.Windows.Forms.Label();
+            this.BSMenu = new System.Windows.Forms.Label();
+            this.VPMenu = new System.Windows.Forms.Label();
+            this.PMenu = new System.Windows.Forms.Label();
+            this.VDMenu = new System.Windows.Forms.Label();
+            this.DMenu = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.VDDataGrid = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.VDDataGrid)).BeginInit();
@@ -77,20 +78,105 @@ namespace Blood_Donor_Center_Managment_System.Forms
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DarkRed;
-            this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.panel4);
-            this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.DashMenu);
+            this.panel1.Controls.Add(this.BTMenu);
+            this.panel1.Controls.Add(this.BSMenu);
+            this.panel1.Controls.Add(this.VPMenu);
+            this.panel1.Controls.Add(this.PMenu);
+            this.panel1.Controls.Add(this.VDMenu);
+            this.panel1.Controls.Add(this.DMenu);
+            this.panel1.Controls.Add(this.label9);
+            this.panel1.Controls.Add(this.panel4);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(261, 841);
             this.panel1.TabIndex = 6;
+            // 
+            // DashMenu
+            // 
+            this.DashMenu.AutoSize = true;
+            this.DashMenu.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.DashMenu.ForeColor = System.Drawing.Color.White;
+            this.DashMenu.Location = new System.Drawing.Point(24, 598);
+            this.DashMenu.Name = "DashMenu";
+            this.DashMenu.Size = new System.Drawing.Size(176, 42);
+            this.DashMenu.TabIndex = 23;
+            this.DashMenu.Text = "Dashboard";
+            this.DashMenu.Click += new System.EventHandler(this.DashMenu_Click);
+            // 
+            // BTMenu
+            // 
+            this.BTMenu.AutoSize = true;
+            this.BTMenu.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.BTMenu.ForeColor = System.Drawing.Color.White;
+            this.BTMenu.Location = new System.Drawing.Point(24, 522);
+            this.BTMenu.Name = "BTMenu";
+            this.BTMenu.Size = new System.Drawing.Size(237, 42);
+            this.BTMenu.TabIndex = 22;
+            this.BTMenu.Text = "Blood Transfer";
+            this.BTMenu.Click += new System.EventHandler(this.BTMenu_Click);
+            // 
+            // BSMenu
+            // 
+            this.BSMenu.AutoSize = true;
+            this.BSMenu.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.BSMenu.ForeColor = System.Drawing.Color.White;
+            this.BSMenu.Location = new System.Drawing.Point(24, 442);
+            this.BSMenu.Name = "BSMenu";
+            this.BSMenu.Size = new System.Drawing.Size(197, 42);
+            this.BSMenu.TabIndex = 21;
+            this.BSMenu.Text = "Blood Stock";
+            this.BSMenu.Click += new System.EventHandler(this.BSMenu_Click);
+            // 
+            // VPMenu
+            // 
+            this.VPMenu.AutoSize = true;
+            this.VPMenu.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.VPMenu.ForeColor = System.Drawing.Color.White;
+            this.VPMenu.Location = new System.Drawing.Point(24, 367);
+            this.VPMenu.Name = "VPMenu";
+            this.VPMenu.Size = new System.Drawing.Size(219, 42);
+            this.VPMenu.TabIndex = 20;
+            this.VPMenu.Text = "View Patients";
+            this.VPMenu.Click += new System.EventHandler(this.VPMenu_Click);
+            // 
+            // PMenu
+            // 
+            this.PMenu.AutoSize = true;
+            this.PMenu.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.PMenu.ForeColor = System.Drawing.Color.White;
+            this.PMenu.Location = new System.Drawing.Point(24, 293);
+            this.PMenu.Name = "PMenu";
+            this.PMenu.Size = new System.Drawing.Size(119, 42);
+            this.PMenu.TabIndex = 19;
+            this.PMenu.Text = "Patient";
+            this.PMenu.Click += new System.EventHandler(this.PMenu_Click);
+            // 
+            // VDMenu
+            // 
+            this.VDMenu.AutoSize = true;
+            this.VDMenu.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.VDMenu.ForeColor = System.Drawing.Color.White;
+            this.VDMenu.Location = new System.Drawing.Point(24, 222);
+            this.VDMenu.Name = "VDMenu";
+            this.VDMenu.Size = new System.Drawing.Size(212, 42);
+            this.VDMenu.TabIndex = 18;
+            this.VDMenu.Text = "View Donors";
+            this.VDMenu.Click += new System.EventHandler(this.VDMenu_Click);
+            // 
+            // DMenu
+            // 
+            this.DMenu.AutoSize = true;
+            this.DMenu.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.DMenu.ForeColor = System.Drawing.Color.White;
+            this.DMenu.Location = new System.Drawing.Point(24, 148);
+            this.DMenu.Name = "DMenu";
+            this.DMenu.Size = new System.Drawing.Size(112, 42);
+            this.DMenu.TabIndex = 17;
+            this.DMenu.Text = "Donor";
+            this.DMenu.Click += new System.EventHandler(this.DMenu_Click);
             // 
             // label9
             // 
@@ -103,61 +189,6 @@ namespace Blood_Donor_Center_Managment_System.Forms
             this.label9.TabIndex = 16;
             this.label9.Text = "Logout";
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(28, 599);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(176, 42);
-            this.label8.TabIndex = 15;
-            this.label8.Text = "Dashboard";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(28, 523);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(237, 42);
-            this.label7.TabIndex = 13;
-            this.label7.Text = "Blood Transfer";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(28, 443);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(197, 42);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "Blood Stock";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(28, 368);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(219, 42);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "View Patients";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(28, 294);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(119, 42);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Patient";
-            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -166,28 +197,6 @@ namespace Blood_Donor_Center_Managment_System.Forms
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(10, 62);
             this.panel4.TabIndex = 4;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(28, 223);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(212, 42);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "View Donors";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(28, 149);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(112, 42);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Donor";
             // 
             // label11
             // 
@@ -245,35 +254,36 @@ namespace Blood_Donor_Center_Managment_System.Forms
             // 
             // VDDataGrid
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Pink;
-            this.VDDataGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Pink;
+            this.VDDataGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.VDDataGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.VDDataGrid.BackgroundColor = System.Drawing.Color.White;
             this.VDDataGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.VDDataGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.VDDataGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DarkRed;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.VDDataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.DarkRed;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.VDDataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.VDDataGrid.ColumnHeadersHeight = 25;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(217)))), ((int)(((byte)(215)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(129)))), ((int)(((byte)(121)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.VDDataGrid.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(217)))), ((int)(((byte)(215)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(129)))), ((int)(((byte)(121)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.VDDataGrid.DefaultCellStyle = dataGridViewCellStyle6;
             this.VDDataGrid.EnableHeadersVisualStyles = false;
             this.VDDataGrid.GridColor = System.Drawing.Color.LavenderBlush;
             this.VDDataGrid.Location = new System.Drawing.Point(296, 223);
             this.VDDataGrid.Name = "VDDataGrid";
             this.VDDataGrid.RowHeadersVisible = false;
+            this.VDDataGrid.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.VDDataGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.VDDataGrid.Size = new System.Drawing.Size(1157, 618);
             this.VDDataGrid.TabIndex = 46;
@@ -299,6 +309,19 @@ namespace Blood_Donor_Center_Managment_System.Forms
             this.VDDataGrid.ThemeStyle.RowsStyle.Height = 22;
             this.VDDataGrid.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(129)))), ((int)(((byte)(121)))));
             this.VDDataGrid.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.VDDataGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.VDDataGrid_CellContentClick);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(24, 662);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(154, 42);
+            this.label2.TabIndex = 25;
+            this.label2.Text = "Donation";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // ViewDonors
             // 
@@ -333,17 +356,18 @@ namespace Blood_Donor_Center_Managment_System.Forms
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label11;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
         private System.Windows.Forms.Label label17;
         private Guna.UI2.WinForms.Guna2DataGridView VDDataGrid;
+        private System.Windows.Forms.Label DashMenu;
+        private System.Windows.Forms.Label BTMenu;
+        private System.Windows.Forms.Label BSMenu;
+        private System.Windows.Forms.Label VPMenu;
+        private System.Windows.Forms.Label PMenu;
+        private System.Windows.Forms.Label VDMenu;
+        private System.Windows.Forms.Label DMenu;
+        private System.Windows.Forms.Label label2;
     }
 }

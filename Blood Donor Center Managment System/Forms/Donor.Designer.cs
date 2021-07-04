@@ -31,17 +31,17 @@ namespace Blood_Donor_Center_Managment_System.Forms
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Donor));
             this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.DashMenu = new System.Windows.Forms.Label();
+            this.BTMenu = new System.Windows.Forms.Label();
+            this.BSMenu = new System.Windows.Forms.Label();
+            this.VPMenu = new System.Windows.Forms.Label();
+            this.PMenu = new System.Windows.Forms.Label();
+            this.VDMenu = new System.Windows.Forms.Label();
+            this.DMenu = new System.Windows.Forms.Label();
             this.DNameTb = new Guna.UI2.WinForms.Guna2TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -57,6 +57,7 @@ namespace Blood_Donor_Center_Managment_System.Forms
             this.Blood_drop = new System.Windows.Forms.PictureBox();
             this.label17 = new System.Windows.Forms.Label();
             this.DSave = new Guna.UI2.WinForms.Guna2Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Blood_drop)).BeginInit();
@@ -73,61 +74,6 @@ namespace Blood_Donor_Center_Managment_System.Forms
             this.label9.TabIndex = 16;
             this.label9.Text = "Logout";
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(28, 599);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(176, 42);
-            this.label8.TabIndex = 15;
-            this.label8.Text = "Dashboard";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(28, 523);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(237, 42);
-            this.label7.TabIndex = 13;
-            this.label7.Text = "Blood Transfer";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(28, 443);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(197, 42);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "Blood Stock";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(28, 368);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(219, 42);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "View Patients";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(28, 223);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(212, 42);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "View Donors";
-            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
@@ -136,17 +82,7 @@ namespace Blood_Donor_Center_Managment_System.Forms
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(10, 62);
             this.panel3.TabIndex = 2;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(28, 149);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(112, 42);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Donor";
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // label1
             // 
@@ -169,34 +105,108 @@ namespace Blood_Donor_Center_Managment_System.Forms
             this.panel2.Size = new System.Drawing.Size(1224, 59);
             this.panel2.TabIndex = 5;
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(28, 294);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(119, 42);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Patient";
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DarkRed;
-            this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.DashMenu);
+            this.panel1.Controls.Add(this.BTMenu);
+            this.panel1.Controls.Add(this.BSMenu);
+            this.panel1.Controls.Add(this.VPMenu);
+            this.panel1.Controls.Add(this.PMenu);
+            this.panel1.Controls.Add(this.VDMenu);
+            this.panel1.Controls.Add(this.DMenu);
+            this.panel1.Controls.Add(this.label9);
+            this.panel1.Controls.Add(this.panel3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(261, 841);
             this.panel1.TabIndex = 4;
+            // 
+            // DashMenu
+            // 
+            this.DashMenu.AutoSize = true;
+            this.DashMenu.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.DashMenu.ForeColor = System.Drawing.Color.White;
+            this.DashMenu.Location = new System.Drawing.Point(30, 599);
+            this.DashMenu.Name = "DashMenu";
+            this.DashMenu.Size = new System.Drawing.Size(176, 42);
+            this.DashMenu.TabIndex = 23;
+            this.DashMenu.Text = "Dashboard";
+            this.DashMenu.Click += new System.EventHandler(this.DashMenu_Click);
+            // 
+            // BTMenu
+            // 
+            this.BTMenu.AutoSize = true;
+            this.BTMenu.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.BTMenu.ForeColor = System.Drawing.Color.White;
+            this.BTMenu.Location = new System.Drawing.Point(30, 523);
+            this.BTMenu.Name = "BTMenu";
+            this.BTMenu.Size = new System.Drawing.Size(237, 42);
+            this.BTMenu.TabIndex = 22;
+            this.BTMenu.Text = "Blood Transfer";
+            this.BTMenu.Click += new System.EventHandler(this.BTMenu_Click);
+            // 
+            // BSMenu
+            // 
+            this.BSMenu.AutoSize = true;
+            this.BSMenu.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.BSMenu.ForeColor = System.Drawing.Color.White;
+            this.BSMenu.Location = new System.Drawing.Point(30, 443);
+            this.BSMenu.Name = "BSMenu";
+            this.BSMenu.Size = new System.Drawing.Size(197, 42);
+            this.BSMenu.TabIndex = 21;
+            this.BSMenu.Text = "Blood Stock";
+            this.BSMenu.Click += new System.EventHandler(this.BSMenu_Click);
+            // 
+            // VPMenu
+            // 
+            this.VPMenu.AutoSize = true;
+            this.VPMenu.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.VPMenu.ForeColor = System.Drawing.Color.White;
+            this.VPMenu.Location = new System.Drawing.Point(30, 368);
+            this.VPMenu.Name = "VPMenu";
+            this.VPMenu.Size = new System.Drawing.Size(219, 42);
+            this.VPMenu.TabIndex = 20;
+            this.VPMenu.Text = "View Patients";
+            this.VPMenu.Click += new System.EventHandler(this.VPMenu_Click);
+            // 
+            // PMenu
+            // 
+            this.PMenu.AutoSize = true;
+            this.PMenu.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.PMenu.ForeColor = System.Drawing.Color.White;
+            this.PMenu.Location = new System.Drawing.Point(30, 294);
+            this.PMenu.Name = "PMenu";
+            this.PMenu.Size = new System.Drawing.Size(119, 42);
+            this.PMenu.TabIndex = 19;
+            this.PMenu.Text = "Patient";
+            this.PMenu.Click += new System.EventHandler(this.PMenu_Click);
+            // 
+            // VDMenu
+            // 
+            this.VDMenu.AutoSize = true;
+            this.VDMenu.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.VDMenu.ForeColor = System.Drawing.Color.White;
+            this.VDMenu.Location = new System.Drawing.Point(30, 223);
+            this.VDMenu.Name = "VDMenu";
+            this.VDMenu.Size = new System.Drawing.Size(212, 42);
+            this.VDMenu.TabIndex = 18;
+            this.VDMenu.Text = "View Donors";
+            this.VDMenu.Click += new System.EventHandler(this.VDMenu_Click);
+            // 
+            // DMenu
+            // 
+            this.DMenu.AutoSize = true;
+            this.DMenu.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.DMenu.ForeColor = System.Drawing.Color.White;
+            this.DMenu.Location = new System.Drawing.Point(30, 149);
+            this.DMenu.Name = "DMenu";
+            this.DMenu.Size = new System.Drawing.Size(112, 42);
+            this.DMenu.TabIndex = 17;
+            this.DMenu.Text = "Donor";
+            this.DMenu.Click += new System.EventHandler(this.DMenu_Click);
             // 
             // DNameTb
             // 
@@ -496,6 +506,18 @@ namespace Blood_Donor_Center_Managment_System.Forms
             this.DSave.Text = "Save";
             this.DSave.Click += new System.EventHandler(this.DSave_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(30, 660);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(154, 42);
+            this.label2.TabIndex = 25;
+            this.label2.Text = "Donation";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
             // Donor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -535,16 +557,9 @@ namespace Blood_Donor_Center_Managment_System.Forms
 
         #endregion
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel1;
         private Guna.UI2.WinForms.Guna2TextBox DNameTb;
         private System.Windows.Forms.Label label11;
@@ -558,9 +573,16 @@ namespace Blood_Donor_Center_Managment_System.Forms
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
         private Guna.UI2.WinForms.Guna2ComboBox DGenderCB;
-        private Guna.UI2.WinForms.Guna2Button DSaveButton;
         private System.Windows.Forms.PictureBox Blood_drop;
         private System.Windows.Forms.Label label17;
         private Guna.UI2.WinForms.Guna2Button DSave;
+        private System.Windows.Forms.Label DashMenu;
+        private System.Windows.Forms.Label BTMenu;
+        private System.Windows.Forms.Label BSMenu;
+        private System.Windows.Forms.Label VPMenu;
+        private System.Windows.Forms.Label PMenu;
+        private System.Windows.Forms.Label VDMenu;
+        private System.Windows.Forms.Label DMenu;
+        private System.Windows.Forms.Label label2;
     }
 }
