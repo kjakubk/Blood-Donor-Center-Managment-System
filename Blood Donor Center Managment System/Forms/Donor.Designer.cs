@@ -57,6 +57,7 @@ namespace Blood_Donor_Center_Managment_System.Forms
             this.Blood_drop = new System.Windows.Forms.PictureBox();
             this.label17 = new System.Windows.Forms.Label();
             this.DSave = new Guna.UI2.WinForms.Guna2Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Blood_drop)).BeginInit();
@@ -81,6 +82,7 @@ namespace Blood_Donor_Center_Managment_System.Forms
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(10, 62);
             this.panel3.TabIndex = 2;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // label1
             // 
@@ -106,6 +108,7 @@ namespace Blood_Donor_Center_Managment_System.Forms
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DarkRed;
+            this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.DashMenu);
             this.panel1.Controls.Add(this.BTMenu);
             this.panel1.Controls.Add(this.BSMenu);
@@ -503,6 +506,18 @@ namespace Blood_Donor_Center_Managment_System.Forms
             this.DSave.Text = "Save";
             this.DSave.Click += new System.EventHandler(this.DSave_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(30, 660);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(154, 42);
+            this.label2.TabIndex = 25;
+            this.label2.Text = "Donation";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
             // Donor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -568,5 +583,6 @@ namespace Blood_Donor_Center_Managment_System.Forms
         private System.Windows.Forms.Label PMenu;
         private System.Windows.Forms.Label VDMenu;
         private System.Windows.Forms.Label DMenu;
+        private System.Windows.Forms.Label label2;
     }
 }

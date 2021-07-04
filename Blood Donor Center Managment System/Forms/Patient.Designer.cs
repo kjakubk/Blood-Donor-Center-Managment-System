@@ -57,6 +57,7 @@ namespace Blood_Donor_Center_Managment_System.Forms
             this.label10 = new System.Windows.Forms.Label();
             this.Blood_drop = new System.Windows.Forms.PictureBox();
             this.PSave = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Blood_drop)).BeginInit();
@@ -86,6 +87,7 @@ namespace Blood_Donor_Center_Managment_System.Forms
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DarkRed;
+            this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.DashMenu);
             this.panel1.Controls.Add(this.BTMenu);
@@ -100,7 +102,6 @@ namespace Blood_Donor_Center_Managment_System.Forms
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(261, 841);
             this.panel1.TabIndex = 6;
-            
             // 
             // label9
             // 
@@ -326,6 +327,7 @@ namespace Blood_Donor_Center_Managment_System.Forms
             this.PAddressTb.ShadowDecoration.Parent = this.PAddressTb;
             this.PAddressTb.Size = new System.Drawing.Size(306, 151);
             this.PAddressTb.TabIndex = 37;
+            this.PAddressTb.TextChanged += new System.EventHandler(this.PAddressTb_TextChanged);
             // 
             // label13
             // 
@@ -499,6 +501,18 @@ namespace Blood_Donor_Center_Managment_System.Forms
             this.PSave.Text = "Save";
             this.PSave.Click += new System.EventHandler(this.PSave_Click_1);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(28, 663);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(154, 42);
+            this.label2.TabIndex = 25;
+            this.label2.Text = "Donation";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
             // Patient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -565,5 +579,6 @@ namespace Blood_Donor_Center_Managment_System.Forms
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.PictureBox Blood_drop;
         private Guna.UI2.WinForms.Guna2CircleButton PSave;
+        private System.Windows.Forms.Label label2;
     }
 }

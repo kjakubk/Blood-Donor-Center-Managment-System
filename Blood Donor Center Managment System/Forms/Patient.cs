@@ -47,8 +47,10 @@ namespace Blood_Donor_Center_Managment_System.Forms
                 {
                     Connect.Open();
                     string query = "INSERT INTO Patient VALUES('" + PNameTb.Text + "'," + PAgeTb.Text + ",'" + PPhoneTb.Text + "','" + PGenderCB.SelectedItem.ToString() + "','" + PBloodTypeCB.SelectedItem.ToString() + "','" + PAddressTb.Text + "')";
+                    
                     SqlCommand command = new SqlCommand(query, Connect);
                     command.ExecuteNonQuery();
+                   
                     MessageBox.Show("Patient Successfully Added");
                     Connect.Close();
                     ClearFields();
@@ -120,6 +122,18 @@ namespace Blood_Donor_Center_Managment_System.Forms
         {
             Dashboard dashboard = new Dashboard();
             dashboard.Show();
+            this.Hide();
+        }
+
+        private void PAddressTb_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            DonateBloodcs donateBlood = new DonateBloodcs();
+            donateBlood.Show();
             this.Hide();
         }
     }

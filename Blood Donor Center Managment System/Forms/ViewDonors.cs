@@ -94,5 +94,14 @@ namespace Blood_Donor_Center_Managment_System.Forms
             dashboard.Show();
             this.Hide();
         }
+
+       
+        private void label2_Click(object sender, EventArgs e)
+        {
+            DonateBloodcs donateBlood = new DonateBloodcs();
+            donateBlood.Show();
+            this.Hide();
+        }
+       
     }
 }

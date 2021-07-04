@@ -86,6 +86,37 @@ namespace Blood_Donor_Center_Managment_System.Forms
                     MessageBox.Show("Patient Successfully Healed");
                     Connect.Close();
                     ClearFields();
+                    PatientsPopulation();
+                }
+                catch (Exception Ex)
+                {
+
+                    MessageBox.Show(Ex.Message);
+                    Connect.Close();
+                }
+        }
+
+        private void VPEdit_Click(object sender, EventArgs e)
+        {
+            if (PNameTb.Text == ""
+                || PPhoneNumberTb.Text == ""
+                || PAgeTb.Text == ""
+                || PGenderCB.SelectedIndex == -1
+                || PBloodTypeCB.SelectedIndex == -1)
+            {
+                MessageBox.Show("Missing Informations");
+            }
+            else
+                try
+                {
+                    Connect.Open();
+                    string query = "UPDATE Patient SET PName='" + PNameTb.Text + "',PAge=" + PAgeTb.Text + ",PPhone='" + PPhoneNumberTb.Text + "',PGender='" + PGenderCB.SelectedItem.ToString() + "',PBloodGroup='" + PBloodTypeCB.SelectedItem.ToString() + "',PAddress='" + PAddressTb.Text + "' WHERE PNum=" + key + ";";
+                    SqlCommand command = new SqlCommand(query, Connect);
+                    command.ExecuteNonQuery();
+                    MessageBox.Show("Patient Informations Sucessfully Updated");
+                    Connect.Close();
+                    ClearFields();
+                    PatientsPopulation();
                 }
                 catch (Exception Ex)
                 {
@@ -141,6 +172,13 @@ namespace Blood_Donor_Center_Managment_System.Forms
         {
             Dashboard dashboard = new Dashboard();
             dashboard.Show();
+            this.Hide();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            DonateBloodcs donateBlood = new DonateBloodcs();
+            donateBlood.Show();
             this.Hide();
         }
     }
